@@ -70,6 +70,11 @@ body {
     gap: 0.5rem;
 }
 
+.navbar-greeting {
+    font-size: 0.9rem;
+    color: #666;
+}
+
 .btn {
     padding: 0.75rem 1.5rem;
     border: none;
@@ -259,4 +264,49 @@ body {
     font-size: 0.75rem;
     margin-top: 0.25rem;
     color: #dc3545;
+}
+
+.error-message {
+    color: #721c24;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 10px;
+}
+
+.product-detial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail-image img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.product-detail-name {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.product-detail-price {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.8;
 }

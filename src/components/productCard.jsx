@@ -10,7 +10,9 @@ export default function ProductCard({ products }) {
             </div>
 
             <div className="product-card-actions">
-                <Link className="btn btn-secondary">View Details</Link>
+                <Link className="btn btn-secondary" to={`/products/${products.id}`}>
+                    View Details
+                </Link>
                 <button className="btn btn-primary">Add To Cart</button>
             </div>
         </div>

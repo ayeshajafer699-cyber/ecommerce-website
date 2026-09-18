@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 export const AuthContext = createContext(null);
 
@@ -33,7 +33,7 @@ export default function AuthProvider({ children }) {
         if (!user) {
             return {
                 success: false,
-                error: "Invalid emai or password"
+                error: "Invalid email or password"
             };
         }
 
@@ -54,4 +54,11 @@ export default function AuthProvider({ children }) {
             {children}
         </AuthContext.Provider>
     );
+}
+
+
+export function useAuth() {
+    const context = useContext(AuthContext);
+
+    return context;
 }
